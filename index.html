@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav Kumar | Data Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <nav class="container nav">
+    <a class="brand" href="#home">GAURAV<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero container" id="home">
+  <div>
+    <p class="eyebrow">Aspiring Data Analyst</p>
+    <h1>Hi, I'm <span>Gaurav Kumar</span></h1>
+    <h2>BCA Graduate · Data Analytics Learner</h2>
+    <p class="intro">I am building practical skills in data cleaning, analysis and visualization. Explore my sample projects and the tools I am learning.</p>
+    <a class="button button-primary" href="#projects">Explore Projects</a>
+    <a class="button button-outline" href="#contact">Contact Me</a>
+  </div>
+  <aside class="profile-card">
+    <div class="avatar">GK</div>
+    <span class="tag">Portfolio · 2026</span>
+    <h3>Learning by doing</h3>
+    <p>Focused on Excel, SQL, Python and data storytelling.</p>
+  </aside>
+</section>
+
+<section class="section container" id="about">
+  <p class="eyebrow">A little about me</p>
+  <h2>About Me</h2>
+  <p class="section-intro">I completed my Bachelor of Computer Applications (BCA) in 2026. I am working towards an entry-level data analyst role and improving my skills through practice projects.</p>
+</section>
+
+<section class="section container" id="skills">
+  <p class="eyebrow">Tools and concepts</p>
+  <h2>Skills I'm Learning</h2>
+  <div class="skills-list">
+    <span>Microsoft Excel</span>
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>Power BI</span>
+    <span>Data Cleaning</span>
+    <span>Data Visualization</span>
+  </div>
+</section>
+
+<section class="section container" id="projects">
+  <p class="eyebrow">Selected work</p>
+  <h2>Data Analytics Projects</h2>
+  <p class="section-intro">Sample demonstrations using illustrative data. Replace them with your own verified results as you complete the projects.</p>
+
+  <div class="project-grid">
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-icon">EX</span>
+        <span class="tag">Excel</span>
+      </div>
+      <h3>01 · Sales Performance Analysis</h3>
+      <p>Explore sample sales figures by product category and review revenue trends.</p>
+      <div class="metric-row">
+        <div><small>Sample revenue</small><strong>₹84,500</strong></div>
+        <div><small>Sample orders</small><strong>250</strong></div>
+      </div>
+      <h4>Analysis focus</h4>
+      <ul>
+        <li>Revenue by category</li>
+        <li>Monthly sales trends</li>
+        <li>PivotTables and charts</li>
+      </ul>
+      <p class="disclaimer">Illustrative figures, not real business results.</p>
+      <button class="text-button" data-project="sales">View project details ↗</button>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-icon">SQL</span>
+        <span class="tag">SQL</span>
+      </div>
+      <h3>02 · Customer Orders Analysis</h3>
+      <p>Practise queries to explore customer orders and spending patterns.</p>
+      <div class="metric-row">
+        <div><small>Sample customers</small><strong>5</strong></div>
+        <div><small>Sample orders</small><strong>8</strong></div>
+      </div>
+      <h4>Example SQL query</h4>
+      <pre><code>SELECT customer,
+       SUM(amount) AS total_spend
+FROM orders
+GROUP BY customer
+ORDER BY total_spend DESC;</code></pre>
+      <p class="disclaimer">Example query for a matching practice table.</p>
+      <button class="text-button" data-project="sql">View project details ↗</button>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-icon">PY</span>
+        <span class="tag">Python</span>
+      </div>
+      <h3>03 · E-commerce Data Analysis</h3>
+      <p>Explore sample product data, check missing values and compare category revenue.</p>
+      <div class="metric-row">
+        <div><small>Sample products</small><strong>6</strong></div>
+        <div><small>Sample categories</small><strong>3</strong></div>
+      </div>
+      <h4>Analysis focus</h4>
+      <ul>
+        <li>Summarize data with Pandas</li>
+        <li>Check missing values</li>
+        <li>Create visualizations</li>
+      </ul>
+      <p class="disclaimer">Illustrative demo, not verified business results.</p>
+      <button class="text-button" data-project="python">View project details ↗</button>
+    </article>
+  </div>
+
+  <div class="project-detail" id="projectDetail" hidden>
+    <button class="close-detail" id="closeDetail" aria-label="Close">×</button>
+    <h3 id="detailTitle"></h3>
+    <div id="detailContent"></div>
+  </div>
+</section>
+
+<section class="section container" id="education">
+  <p class="eyebrow">Education</p>
+  <h2>Education</h2>
+  <div class="education-card">
+    <h3>Bachelor of Computer Applications (BCA)</h3>
+    <p>Graduated in 2026</p>
+  </div>
+</section>
+
+<section class="section container" id="contact">
+  <p class="eyebrow">Let's connect</p>
+  <h2>Contact</h2>
+  <p class="section-intro">Replace these placeholders with your own details before publishing.</p>
+  <div class="contact-card">
+    <p><strong>Email:</strong> Gauravsinghh52@gmail.com</p>
+    <p><strong>LinkedIn:</strong> <a href="#" class="placeholder-link">Add your LinkedIn URL</a></p>
+    <p><strong>GitHub:</strong> <a href="#" class="placeholder-link">Add your GitHub URL</a></p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© <span id="year">2026</span> Gaurav Kumar · HTML, CSS and JavaScript</div>
+</footer>
+</body>
+</html>
